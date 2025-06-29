@@ -124,11 +124,13 @@ navigator.geolocation.watchPosition(pos => {
 ---
 
 ## To-Do / Ideas
-[ ] Push notifications via service workers
-[ ] Secure admin password storage (e.g., bcrypt)
-[ ] Mobile PWA support
-[ ] Live tracking via device GPS
-[ ] Zone time restrictions
+
+- [ ] Push notifications via service workers  
+- [ ] Secure admin password storage (e.g., bcrypt)  
+- [ ] Mobile PWA support  
+- [ ] Live tracking via device GPS  
+- [ ] Zone time restrictions  
+
 
 ---
 

@@ -24,8 +24,9 @@ Leaflet.js map integration.
 - Shapely
 - Aplay (sudo apt install alsa-utils on Linux)
 
+---
 
-Installation
+## Installation
 git clone https://github.com/yourusername/geofenceme.git
 cd geofenceme
 
@@ -33,11 +34,16 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install flask requests shapely
-Run the App
+
+---
+
+## Run the App
 python app.py
 Then visit: http://127.0.0.1:5000
 
-Admin Login
+---
+
+## Admin Login
 | Username | Password |
 
 |----------|----------|
@@ -47,6 +53,9 @@ Change these values in app.py if needed:
 
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'password'
+
+---
+
 Using the Zone Map
 Draw Zones
 Open the Zone Map

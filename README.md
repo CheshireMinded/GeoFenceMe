@@ -66,7 +66,7 @@ You can change these credentials in your `app.py` file:
 - Markers are **draggable** and their position is **persistently saved**.
 - Marker data is stored in `markers.json`.
 
-### ❌ Clear All Markers
+###  Clear All Markers
 - Use the **"Clear Markers"** button below the map.
 - A confirmation prompt will appear before deletion.
 
@@ -78,7 +78,6 @@ You can change these credentials in your `app.py` file:
 
 Enable alerts when a browser enters a GPS zone by adding the following JavaScript to your frontend:
 
-```js
 navigator.geolocation.watchPosition(pos => {
     fetch('/report_location', {
         method: 'POST',

@@ -51,12 +51,6 @@ Then visit: http://127.0.0.1:5000
 
 You can change these credentials in your `app.py` file:
 
-```python
-ADMIN_USERNAME = 'admin'
-ADMIN_PASSWORD = 'password'
-
-
-
 ---
 
 ## Using the Zone Map

@@ -49,10 +49,6 @@ Username	Password
 admin	password
 
 Change these values in app.py if needed:
-
-python
-Copy
-Edit
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'password'
 

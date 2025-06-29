@@ -1,5 +1,6 @@
-GeoFenceMe
-GeoFenceMe is a real-time network and location-based geofencing web application. It allows you to
+# GeoFenceMe
+
+**GeoFenceMe** is a real-time network and location-based geofencing web application. It allows you to
 monitor devices entering or exiting custom-defined IP and GPS-based zones using a live dashboard with
 Leaflet.js map integration.
 

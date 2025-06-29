@@ -1,0 +1,18 @@
+{"timestamp": "2025-06-25T12:59:49.178069", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:07:55.853772", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:05.948500", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:16.116777", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:25.953109", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:35.939056", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:45.940761", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:08:55.928976", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown"}
+{"timestamp": "2025-06-25T13:11:17.075136", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:20.044097", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:30.557816", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:35.230689", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:40.560889", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:45.318339", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:50.554105", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:11:55.310396", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true}
+{"timestamp": "2025-06-25T13:19:05.772839", "ip": "192.168.89.254", "mac": "00:50:56:e2:34:56", "status": "unknown", "zone": "home", "inside": true, "event": "entry"}
+{"timestamp": "2025-06-25T13:19:05.773103", "ip": "192.168.89.2", "mac": "00:50:56:ea:c3:b1", "status": "unknown", "zone": "home", "inside": true, "event": "entry"}

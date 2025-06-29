@@ -53,20 +53,27 @@ You can change these credentials in your `app.py` file:
 
 ---
 
-## Using the Zone Map
-  **Draw Zones**
-    - Open the Zone Map
-    - Use the polygon tool to draw a geofence
-    - You'll be prompted to name it (saved in zones.json)
-  **Add Markers**
-    - Click anywhere on the map to drop a labeled marker
-    - Markers are draggable and saved
-    - Drag position is saved to markers.json
-   **Clear All Markers**
-      - Use the Clear Markers button (with confirmation prompt)
-    **Address Search**
-      - Enter a street/city/address
-      - The map pans to the matched location using Nominatim (OpenStreetMap)
+## 🗺️ Using the Zone Map
+
+### ➕ Draw Zones
+- Open the **Zone Map** from the dashboard.
+- Use the polygon tool to draw a geofence.
+- You'll be prompted to name the zone.
+- Zones are saved to `zones.json`.
+
+### 📍 Add Markers
+- Click anywhere on the map to drop a labeled marker.
+- Markers are **draggable** and their position is **persistently saved**.
+- Marker data is stored in `markers.json`.
+
+### ❌ Clear All Markers
+- Use the **"Clear Markers"** button below the map.
+- A confirmation prompt will appear before deletion.
+
+### 🔎 Address Search
+- Enter a street, city, or full address in the input box.
+- The map will pan to the matched location using **Nominatim (OpenStreetMap)** geocoding.
+
 ## Optional: Real-Time Geolocation Alerts
     **Enable alerts when a browser enters a GPS zone:**
     

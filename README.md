@@ -74,44 +74,54 @@ You can change these credentials in your `app.py` file:
 - Enter a street, city, or full address in the input box.
 - The map will pan to the matched location using **Nominatim (OpenStreetMap)** geocoding.
 
-## Optional: Real-Time Geolocation Alerts
-    **Enable alerts when a browser enters a GPS zone:**
-    
-navigator.geolocation.watchPosition(pos => {
-fetch('/report_location', {
-method: 'POST',
-headers: { 'Content-Type': 'application/json' },
-body: JSON.stringify({ lat: pos.coords.latitude, lon: pos.coords.longitude })
-});
-});
+## 📡 Optional: Real-Time Geolocation Alerts
 
-**Add this to your custom frontend if you want mobile-aware geofencing.**
-Data Files
-File	Purpose
-zones.json	User-defined GPS/IP zones
-| markers.json | Saved labeled draggable markers |
-| known_devices.json | Trusted MAC addresses |
-| device_log.txt | Log of events (entry/exits) |
-| alert_config.json | Email/sound alert configuration |
+Enable alerts when a browser enters a GPS zone by adding the following JavaScript to your frontend:
+
+```js
+navigator.geolocation.watchPosition(pos => {
+    fetch('/report_location', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            lat: pos.coords.latitude,
+            lon: pos.coords.longitude
+        })
+    });
+});
 
 ---
 
-## Alert Types
-- None disables alerts
-- Audio plays alert.wav using aplay
-- Email sends email on zone entry/exit
+## 📁 Data Files
 
-Configure alert_config.json:
+| File                 | Purpose                                 |
+|----------------------|------------------------------------------|
+| `zones.json`         | User-defined GPS/IP zones                |
+| `markers.json`       | Saved labeled draggable markers          |
+| `known_devices.json` | Trusted MAC addresses                    |
+| `device_log.txt`     | Log of events (entry/exits)              |
+| `alert_config.json`  | Email/sound alert configuration          |
+
+---
+
+## 🔔 Alert Types
+
+- **None** – Disables alerts  
+- **Audio** – Plays `alert.wav` using `aplay`  
+- **Email** – Sends email on zone entry/exit
+
+### Example `alert_config.json`
+
+```json
 {
-"method": "email",
-"email": {
-"from": "you@example.com",
-"to": "admin@example.com",
-"password": "your_app_password",
-"smtp_server": "smtp.gmail.com"
+  "method": "email",
+  "email": {
+    "from": "you@example.com",
+    "to": "admin@example.com",
+    "password": "your_app_password",
+    "smtp_server": "smtp.gmail.com"
+  }
 }
-}
-Use Gmail app-specific passwords or SMTP relay.
 
 ---
 

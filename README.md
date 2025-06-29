@@ -45,12 +45,16 @@ Then visit: http://127.0.0.1:5000
 
 ## Admin Login
 
-Username	Password
-admin	password
+| Username | Password |
+|----------|----------|
+| `admin`  | `password` |
 
-Change these values in app.py if needed:
+You can change these credentials in your `app.py` file:
+
+```python
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'password'
+
 
 
 ---

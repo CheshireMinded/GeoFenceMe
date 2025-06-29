@@ -4,22 +4,25 @@
 monitor devices entering or exiting custom-defined IP and GPS-based zones using a live dashboard with
 Leaflet.js map integration.
 
-Features
-Admin login and session-based access control
-Real-time device scanning via ARP
-Define GPS zones directly on a map (no GPS walk required)
-Draggable, persistent map markers with labels
-Manage Trusted / Untrusted MAC addresses
-Device logs & real-time zone entry alerts
-Email or audio alert support
-Address geocoding + auto-pan
-Optional real-time geolocation reporting via browser
-Requirements
-Python 3.8+
-Flask
-Requests
-Shapely
-Aplay (sudo apt install alsa-utils on Linux)
+## Features
+- Admin login and session-based access control
+- Real-time device scanning via ARP
+- Define GPS zones directly on a map (no GPS walk required)
+- Draggable, persistent map markers with labels
+- Manage Trusted / Untrusted MAC addresses
+- Device logs & real-time zone entry alerts
+- Email or audio alert support
+- Address geocoding + auto-pan
+- Optional real-time geolocation reporting via browser
+
+---
+
+## Requirements
+- Python 3.8+
+- Flask
+- Requests
+- Shapely
+- Aplay (sudo apt install alsa-utils on Linux)
 
 
 Installation

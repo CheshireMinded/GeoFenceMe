@@ -53,15 +53,15 @@ You can change these credentials in your `app.py` file:
 
 ---
 
-## 🗺️ Using the Zone Map
+## Using the Zone Map
 
-### ➕ Draw Zones
+### Draw Zones
 - Open the **Zone Map** from the dashboard.
 - Use the polygon tool to draw a geofence.
 - You'll be prompted to name the zone.
 - Zones are saved to `zones.json`.
 
-### 📍 Add Markers
+###  Add Markers
 - Click anywhere on the map to drop a labeled marker.
 - Markers are **draggable** and their position is **persistently saved**.
 - Marker data is stored in `markers.json`.
@@ -70,11 +70,11 @@ You can change these credentials in your `app.py` file:
 - Use the **"Clear Markers"** button below the map.
 - A confirmation prompt will appear before deletion.
 
-### 🔎 Address Search
+###  Address Search
 - Enter a street, city, or full address in the input box.
 - The map will pan to the matched location using **Nominatim (OpenStreetMap)** geocoding.
 
-## 📡 Optional: Real-Time Geolocation Alerts
+##  Optional: Real-Time Geolocation Alerts
 
 Enable alerts when a browser enters a GPS zone by adding the following JavaScript to your frontend:
 
@@ -92,7 +92,7 @@ navigator.geolocation.watchPosition(pos => {
 
 ---
 
-## 📁 Data Files
+##  Data Files
 
 | File                 | Purpose                                 |
 |----------------------|------------------------------------------|
@@ -104,7 +104,7 @@ navigator.geolocation.watchPosition(pos => {
 
 ---
 
-## 🔔 Alert Types
+##  Alert Types
 
 - **None** – Disables alerts  
 - **Audio** – Plays `alert.wav` using `aplay`  
@@ -112,7 +112,6 @@ navigator.geolocation.watchPosition(pos => {
 
 ### Example `alert_config.json`
 
-```json
 {
   "method": "email",
   "email": {

@@ -55,23 +55,23 @@ ADMIN_PASSWORD = 'password'
 
 ---
 
-Using the Zone Map
-Draw Zones
-Open the Zone Map
-Use the polygon tool to draw a geofence
-You'll be prompted to name it (saved in zones.json)
-Add Markers
-Click anywhere on the map to drop a labeled marker
-Markers are draggable and saved
-Drag position is saved to markers.json
-Clear All Markers
-Use the Clear Markers button (with confirmation prompt)
-Address Search
-Enter a street/city/address
-The map pans to the matched location using Nominatim (OpenStreetMap)
-Optional: Real-Time Geolocation Alerts
-Enable alerts when a browser enters a GPS zone:
-
+## Using the Zone Map
+  **Draw Zones**
+    - Open the Zone Map
+    - Use the polygon tool to draw a geofence
+    - You'll be prompted to name it (saved in zones.json)
+  **Add Markers**
+    - Click anywhere on the map to drop a labeled marker
+    - Markers are draggable and saved
+    - Drag position is saved to markers.json
+   **Clear All Markers**
+      - Use the Clear Markers button (with confirmation prompt)
+    **Address Search**
+      - Enter a street/city/address
+      - The map pans to the matched location using Nominatim (OpenStreetMap)
+## Optional: Real-Time Geolocation Alerts
+    **Enable alerts when a browser enters a GPS zone:**
+    
 navigator.geolocation.watchPosition(pos => {
 fetch('/report_location', {
 method: 'POST',
@@ -79,8 +79,8 @@ headers: { 'Content-Type': 'application/json' },
 body: JSON.stringify({ lat: pos.coords.latitude, lon: pos.coords.longitude })
 });
 });
-Add this to your custom frontend if you want mobile-aware geofencing.
 
+**Add this to your custom frontend if you want mobile-aware geofencing.**
 Data Files
 File	Purpose
 zones.json	User-defined GPS/IP zones
@@ -89,12 +89,14 @@ zones.json	User-defined GPS/IP zones
 | device_log.txt | Log of events (entry/exits) |
 | alert_config.json | Email/sound alert configuration |
 
-Alert Types
-None disables alerts
-Audio plays alert.wav using aplay
-Email sends email on zone entry/exit
-Configure alert_config.json:
+---
 
+## Alert Types
+- None disables alerts
+- Audio plays alert.wav using aplay
+- Email sends email on zone entry/exit
+
+Configure alert_config.json:
 {
 "method": "email",
 "email": {
@@ -106,19 +108,25 @@ Configure alert_config.json:
 }
 Use Gmail app-specific passwords or SMTP relay.
 
-To-Do / Ideas
+---
+
+## To-Do / Ideas
 [ ] Push notifications via service workers
 [ ] Secure admin password storage (e.g., bcrypt)
 [ ] Mobile PWA support
 [ ] Live tracking via device GPS
 [ ] Zone time restrictions
 
-Developer Notes
+---
+
+## Developer Notes
 Startup logs and device scans use system ARP table.
 If using on a Raspberry Pi or similar network node, run the app with appropriate permissions to access ARP
 data.
 
-License
+---
+
+##License
 MIT License
 2025 Lauren Hall
 Use this code freely, with attribution.
